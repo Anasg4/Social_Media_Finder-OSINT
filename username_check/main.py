@@ -8,18 +8,21 @@ def result_txt(name):
 def main():
     for i in range(len(link)):
         try:
-            name = link[i]+username
-            conn = urllib.request.urlopen(name)
-        except urllib.error.HTTPError as e:
-                # Return code error (e.g. 404, 501, ...)
-            print(name,'not found, reason >> HTTPError: {}'.format(e.code))
-        except urllib.error.URLError as e:
-                # Not an HTTP-specific error (e.g. connection refused)
-            print(name,'not found, reason >> URLError: {}'.format(e.reason))
-        else:
-                # 200 ok
-            print(name,'Found !!!')
-            result_txt(name)
+            try:
+                name = link[i]+username
+                conn = urllib.request.urlopen(name)
+            except urllib.error.HTTPError as e:
+                    # Return code error (e.g. 404, 501, ...)
+                print(name,'not found, reason >> HTTPError: {}'.format(e.code))
+            except urllib.error.URLError as e:
+                    # Not an HTTP-specific error (e.g. connection refused)
+                print(name,'not found, reason >> URLError: {}'.format(e.reason))
+            else:
+                    # 200 ok
+                print(name,'Found !!!')
+                result_txt(name)
+        except:
+            print("Your connection Bad or the website blocked by your country, Plz wait a sec\nskipping this site ........")
 
 if __name__=="__main__":
     while True:
@@ -28,7 +31,14 @@ if __name__=="__main__":
         ask= input("Do u have your own link \n(rename your link list be mylinks.txt in same directory)\n if not u using default links from this program \ny/n ??")
         if ask == 'n':
             link = [
-                'https://steamcommunity.com/id/','https://www.last.fm/user/','https://photobucket.com/u/','https://www.dailymotion.com/','https://twitch.tv/','https://www.ebay.com/usr/','https://www.bukalapak.com/u/','https://www.tokopedia.com/','https://www.reddit.com/user/','https://www.tripadvisor.co.uk/Profile/','https://www.kongregate.com/','https://ask.fm/','https://about.me/','https://www.meetme.com/','https://myspace.com/','http://kik.me/','https://www.instagram.com/','https://www.youtube.com/','https://www.facebook.com/', 'https://google.com/', 'https://twitter.com/', 'https://tiktok.com/@','https://www.pinterest.com/','https://id.linkedin.com/in/'
+                'https://steamcommunity.com/id/', 'https://www.last.fm/user/', 'https://photobucket.com/u/',
+                'https://www.dailymotion.com/', 'https://twitch.tv/', 'https://www.ebay.com/usr/',
+                'https://www.bukalapak.com/u/', 'https://www.tokopedia.com/', 'https://www.reddit.com/user/',
+                'https://www.tripadvisor.co.uk/Profile/', 'https://www.kongregate.com/', 'https://ask.fm/',
+                'https://about.me/', 'https://www.meetme.com/', 'https://myspace.com/', 'http://kik.me/',
+                'https://www.instagram.com/', 'https://www.youtube.com/', 'https://www.facebook.com/',
+                'https://google.com/', 'https://twitter.com/', 'https://tiktok.com/@', 'https://www.pinterest.com/',
+                'https://id.linkedin.com/in/'
             ]
         else:
             linknew = open("mylinks.txt", "r")
