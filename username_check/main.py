@@ -37,7 +37,7 @@ if __name__=="__main__":
                 'https://www.tripadvisor.co.uk/Profile/', 'https://www.kongregate.com/', 'https://ask.fm/',
                 'https://about.me/', 'https://www.meetme.com/', 'https://myspace.com/', 'http://kik.me/',
                 'https://www.instagram.com/', 'https://www.youtube.com/', 'https://www.facebook.com/',
-                'https://google.com/', 'https://twitter.com/', 'https://tiktok.com/@', 'https://www.pinterest.com/',
+                'https://twitter.com/', 'https://tiktok.com/@', 'https://www.pinterest.com/',
                 'https://id.linkedin.com/in/'
             ]
         else:
