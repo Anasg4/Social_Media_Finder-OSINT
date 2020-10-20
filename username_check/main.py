@@ -33,8 +33,7 @@ if __name__=="__main__":
             link = [
                 'https://steamcommunity.com/id/', 'https://www.last.fm/user/', 'https://photobucket.com/u/',
                 'https://www.dailymotion.com/', 'https://twitch.tv/', 'https://www.ebay.com/usr/',
-                'https://www.bukalapak.com/u/', 'https://www.tokopedia.com/', 'https://www.reddit.com/user/',
-                'https://www.tripadvisor.co.uk/Profile/', 'https://www.kongregate.com/', 'https://ask.fm/',
+                'https://www.reddit.com/user/', 'https://www.tripadvisor.co.uk/Profile/', 'https://www.kongregate.com/', 'https://ask.fm/',
                 'https://about.me/', 'https://www.meetme.com/', 'https://myspace.com/', 'http://kik.me/',
                 'https://www.instagram.com/', 'https://www.youtube.com/', 'https://www.facebook.com/',
                 'https://twitter.com/', 'https://tiktok.com/@', 'https://www.pinterest.com/',
